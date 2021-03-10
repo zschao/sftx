@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03449F8AA7262635E4C9994A /* Pods-瞬富天下.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瞬富天下.release.xcconfig"; path = "Target Support Files/Pods-瞬富天下/Pods-瞬富天下.release.xcconfig"; sourceTree = "<group>"; };
+		4C540079EE86EDB97B8A4873 /* Pods-瞬富天下.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瞬富天下.debug.xcconfig"; path = "Target Support Files/Pods-瞬富天下/Pods-瞬富天下.debug.xcconfig"; sourceTree = "<group>"; };
 		53C7A29A25F888A500A78A03 /* 瞬富天下.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瞬富天下.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C7A29D25F888A500A78A03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53C7A29E25F888A500A78A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,7 @@
 		53C7A2AC25F888A800A78A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53C7A2AE25F888A800A78A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53C7A2AF25F888A800A78A03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7142B2B184B0CE34789F09AA /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +42,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1177E4FD919CF5016BAFEBF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C540079EE86EDB97B8A4873 /* Pods-瞬富天下.debug.xcconfig */,
+				03449F8AA7262635E4C9994A /* Pods-瞬富天下.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		53C7A29125F888A500A78A03 = {
 			isa = PBXGroup;
 			children = (
 				53C7A29C25F888A500A78A03 /* 瞬富天下 */,
 				53C7A29B25F888A500A78A03 /* Products */,
+				1177E4FD919CF5016BAFEBF9 /* Pods */,
+				5BBCE0587DE33218A8F4F51B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +85,14 @@
 			path = "瞬富天下";
 			sourceTree = "<group>";
 		};
+		5BBCE0587DE33218A8F4F51B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7142B2B184B0CE34789F09AA /* Pods_____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53C7A2B325F888A800A78A03 /* Build configuration list for PBXNativeTarget "瞬富天下" */;
 			buildPhases = (
+				A33E6E91C6DCED53BB8DFDBB /* [CP] Check Pods Manifest.lock */,
 				53C7A29625F888A500A78A03 /* Sources */,
 				53C7A29725F888A500A78A03 /* Frameworks */,
 				53C7A29825F888A500A78A03 /* Resources */,
+				278C543D608DA64FA6BDD308 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		278C543D608DA64FA6BDD308 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-瞬富天下/Pods-瞬富天下-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-瞬富天下/Pods-瞬富天下-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-瞬富天下/Pods-瞬富天下-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33E6E91C6DCED53BB8DFDBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-瞬富天下-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53C7A29625F888A500A78A03 /* Sources */ = {
@@ -282,6 +348,7 @@
 		};
 		53C7A2B425F888A800A78A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C540079EE86EDB97B8A4873 /* Pods-瞬富天下.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +368,7 @@
 		};
 		53C7A2B525F888A800A78A03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03449F8AA7262635E4C9994A /* Pods-瞬富天下.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
