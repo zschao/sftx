@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  瞬富天下
+//
+//  Created by 赵世超 on 2021/3/10.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
